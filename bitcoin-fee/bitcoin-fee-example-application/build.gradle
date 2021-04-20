@@ -18,7 +18,7 @@ dependencies {
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-btcdotcom')
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-earndotcom')
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-mempoolspace')
-
+    implementation project(':bitcoin-fee:bitcoin-fee-estimate-dummy')
 
     implementation "io.springfox:springfox-boot-starter:${springfoxVersion}"
 

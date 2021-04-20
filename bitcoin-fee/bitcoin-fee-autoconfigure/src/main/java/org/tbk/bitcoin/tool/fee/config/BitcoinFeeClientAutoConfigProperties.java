@@ -8,7 +8,7 @@ import org.springframework.validation.Validator;
 @Data
 @ConfigurationProperties(
         prefix = "org.tbk.bitcoin.tool.fee",
-        ignoreUnknownFields = false
+        ignoreUnknownFields = true
 )
 public class BitcoinFeeClientAutoConfigProperties implements Validator {
 

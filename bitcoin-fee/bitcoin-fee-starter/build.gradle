@@ -18,6 +18,7 @@ dependencies {
     api project(':bitcoin-fee:bitcoin-fee-estimate-btcdotcom')
     api project(':bitcoin-fee:bitcoin-fee-estimate-earndotcom')
     api project(':bitcoin-fee:bitcoin-fee-estimate-mempoolspace')
+    api project(':bitcoin-fee:bitcoin-fee-estimate-dummy')
 
     api project(':bitcoin-fee:bitcoin-fee-autoconfigure')
 

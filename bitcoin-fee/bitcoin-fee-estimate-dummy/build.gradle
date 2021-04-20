@@ -1,0 +1,9 @@
+plugins {
+    id 'java'
+}
+
+description = 'dummy bitcoin fee client package'
+
+dependencies {
+    api project(':bitcoin-fee:bitcoin-fee-estimate-core')
+}

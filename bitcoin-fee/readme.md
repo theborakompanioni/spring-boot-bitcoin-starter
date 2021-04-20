@@ -268,4 +268,27 @@ Incubating:
 ]
 ```
 
+### Dummy
+
+A simple provider for fix defined fee estimations - useful for tests.
+
+The fee estimations is a map **minutes => sat/vByte**.
+
+#### Example configuration
+
+You'll need two entries:
+
+* enable the dummy fee provider explicitly
+* a list of static fees as map Duration(minutes) : Fee (sat/vByte), separated by |
+
+```yaml
+org.tbk.bitcoin.tool.fee.dummy.enabled: true
+org.tbk.bitcoin.tool.fee.dummy.static-fee-data:
+  'PT30M': '40.1'
+  'PT40M': '30.3'
+  'PT3H':  '21.4991'
+```
+
+*NOTE: This provider is disabled by default - you need to enable this via configuration explicitly.*
+
 All text and images in this readme.md are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
